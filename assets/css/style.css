@@ -1,0 +1,315 @@
+* {
+	box-sizing: border-box;
+}
+
+nav {
+	width: auto;
+	float: right;
+	padding-top: 35px;
+	font-size: 24px;
+	width: 35%;
+}
+
+body {
+	margin: 0 auto;
+	background-image: url("../images/white.png");
+}
+
+h1, h2 {
+	font-family: 'Georgia', Times, "Times New Roman", serif;
+	color: #4aaaa5;
+}
+
+h1 {
+	font-size: 30px;
+}
+
+nav a {
+	color: #777;
+	text-decoration: none;
+	width: 30%;
+	padding-right: 5px;
+}
+
+p {
+	color: #777;
+	line-height: 200%;
+}
+
+hr {
+	background: #ccc;
+	color: #ccc;
+    height: 3px;
+    width: 100%;
+}
+
+footer {
+	background: #666;
+	color: #aaa;
+	border-top: 6px solid #4aaaa5;
+	padding: 33px;
+	text-align: center;
+	font-size: 12px;
+	margin-top: 30px
+}
+
+textarea {
+	width: 100%;
+	height: 150px;
+}
+
+.clearfix {
+	display: block;
+	width: 1024px;
+	margin: 0 auto;
+}
+
+#my-name {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	color: #fff;
+	background: #4aaaa5;
+	font-size: 32px;
+	padding: 30px 20px 29px 20px;
+	position: absolute;
+	left: 128px;
+}
+
+#about-me, #portfolio, #contact{
+	border: 2px solid #ddd;
+	padding: 10px 30px 10px 30px;
+	width: 60%;
+	background: #fff;
+	margin: 40px 40px 0 0;
+}
+
+#portfolio {
+	height: 770px;
+}
+
+#profilepic {
+	width: 240px;
+	height: auto;
+	float: left;
+	margin: 10px 20px 0 0;
+}
+
+#connect-with-me {
+	border: 2px solid #ddd;
+	padding: 0px 30px 40px 30px;
+	width: 22%;
+	background: #fff;
+	position: absolute;
+	top: 137px;
+	right: 200px;
+}
+
+#icon {
+	width: 28.5%;
+	height: auto;
+	margin: 3.5px;
+}
+
+#header {
+	background: #fff;
+	border-bottom: 2px solid #ccc;
+	height: 97px;
+}
+
+#submit {
+	color: #fff;
+	background-color: #4aaaa5;
+	border: none;
+	font-size: 14px;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	padding: 10px 20px;
+	margin: 15px auto;
+}
+
+.border-right {
+	border-right: 2px solid #777;
+}
+
+.content {
+  min-height: calc(80vh - 70px);
+}
+
+.form {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: #777
+}
+
+.input {
+    width: 100%;
+}
+
+.mysite {
+	width: 50%;
+	height: auto;
+}
+
+.relative{
+	position: relative; 
+	display: block;
+}
+
+.absolute-text{
+	position: absolute; 
+	bottom: 0; 
+	font-size: 24px; 
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;; 
+	background: #4aaaa5;
+	padding: 10px 20px; 
+	width: 50%;
+	text-align: center;
+	color: #fff;
+}
+
+.site2 {
+	position: relative;
+	left: 277px;
+	bottom: 210px;
+}
+
+.site3 {
+	position: relative;
+	bottom: 199px;
+}
+
+.site4 {
+	position: relative;
+	left: 277px;
+	bottom: 409px;
+}
+
+.site5 {
+	position: relative;
+	bottom: 398px;
+}
+
+.clearfix::after {
+    clear: both;
+    content: '';
+    display: block;
+}
+
+/*change display at 980px*/
+@media (max-width: 980px) {
+
+	body {
+		/*background: red;*/
+	}
+
+	h2 {
+		font-size: 18px;
+	}
+
+	footer {
+		margin-top: 100px;
+		position: absolute;
+		top: 900px;
+		width: 100%;
+	}
+
+	#profilepic {
+		width: 100%;
+		height: auto;
+		float: left;
+		margin: 10px 20px 0 0;
+	}
+
+  	#my-name {
+		position: absolute;
+		left: 128px;
+	}
+
+	#about-me, #portfolio, #contact{
+		border: 2px solid #ddd;
+		padding: 10px 30px 10px 30px;
+		width: 37%;
+		position: absolute;
+		left: 128px;
+		margin-bottom: 150px;
+	}	
+
+  	#connect-with-me {
+		border: 2px solid #ddd;
+		padding: 0px 30px 40px 30px;
+		width: 30%;
+		background: #fff;
+		position: absolute;
+		top: 137px;
+		right: 100px;
+		margin-left: 50%;
+	}
+}
+
+/*change display at 768px*/
+@media (max-width: 768px) {
+
+	body {
+		background: yellow;
+	}
+
+	footer {
+		background: #666;
+		color: #aaa;
+		border-top: 6px solid #4aaaa5;
+		padding: 33px;
+		text-align: center;
+		font-size: 12px;
+		margin-top: 30px
+	}
+
+  	#my-name {
+		position: absolute;
+		left: 28px;
+	}
+
+	#about-me, #portfolio, #contact{
+		border: 2px solid #ddd;
+		padding: 10px 30px 10px 30px;
+		position: absolute;
+		left: 20px;
+	}	
+
+  #connect-with-me {
+	border: 2px solid #ddd;
+	padding: 0px 30px 40px 30px;
+	width: 22%;
+	background: #fff;
+	position: absolute;
+	top: 137px;
+	right: 200px;
+	}
+}
+
+/*change display at 640px*/
+@media (max-width: 640px) {
+
+	body {
+		background: green;
+	}
+
+  	#my-name {
+  		position: absolute;
+  		left: 0px;
+  		width: 100%;
+	}
+
+	#about-me, #portfolio, #contact{
+		border: 2px solid #ddd;
+		padding: 10px 30px 10px 30px;
+		position: absolute;
+		left: 20px;
+	}	
+
+ 	#connect-with-me {
+		border: 2px solid #ddd;
+		padding: 0px 30px 40px 30px;
+		width: 22%;
+		background: #fff;
+		position: absolute;
+		top: 137px;
+		right: 200px;
+	}
+}
