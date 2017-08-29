@@ -79,7 +79,8 @@ textarea {
 	padding: 10px 30px 10px 30px;
 	width: 60%;
 	background: #fff;
-	margin: 40px 40px 0 0;
+	margin-top: 40px;
+	margin-right: 100px;
 }
 
 #portfolio {
@@ -130,7 +131,7 @@ textarea {
 }
 
 .content {
-  min-height: calc(80vh - 70px);
+  	min-height: calc(80vh - 70px);
 }
 
 .form {
@@ -239,7 +240,6 @@ textarea {
 		position: absolute;
 		top: 137px;
 		right: 100px;
-		margin-left: 50%;
 	}
 
 	.relative{
@@ -269,12 +269,13 @@ textarea {
 		bottom: 4%;
 	}
 
+	.clearfix {
+		width: 980px;
+	}
+}
+
 /*change display at 768px*/
 @media (max-width: 768px) {
-
-	body {
-		background: yellow;
-	}
 
 	footer {
 		background: #666;
@@ -286,40 +287,118 @@ textarea {
 		margin-top: 30px
 	}
 
+	#header {
+		background: #fff;
+		border-bottom: 2px solid #ccc;
+		height: 97px;
+		width: 100%;
+	}
+
   	#my-name {
 		position: absolute;
 		left: 28px;
 	}
 
-	#about-me, #portfolio, #contact{
+	#about-me, #portfolio, #contact {
 		border: 2px solid #ddd;
 		padding: 10px 30px 10px 30px;
 		position: absolute;
-		left: 20px;
-	}	
+		left: 28px;
+		width: 93%;
+	}
 
-  #connect-with-me {
-	border: 2px solid #ddd;
-	padding: 0px 30px 40px 30px;
-	width: 22%;
-	background: #fff;
-	position: absolute;
-	top: 137px;
-	right: 200px;
+	#portfolio {
+		height: 900px;
+	}
+
+	#connect-with-me {
+		border: 2px solid #ddd;
+		padding: 0px 30px 40px 30px;
+		width: 93%;
+		background: #fff;
+		position: absolute;
+		top: 1075px;
+		left: 28px;
+		}
+
+	#profilepic {
+		width: 50%;
+		height: auto;
+		float: left;
+		margin: 10px 20px 0 0;
+	}
+
+	#icon {
+		width: 10%;
+		padding-top: 10px;
+	}
+
+	.relative{
+		position: absolute;
+		width: 90%;
+	}
+
+	.site2 {
+		position: absolute;
+		left: 50%;
+		bottom: 62%;
+	}
+
+	.site3 {
+		position: absolute;
+		bottom: 33%;
+	}
+
+	.site4 {
+		position: absolute;
+		left: 50%;
+		bottom: 33%;
+	}
+
+	.site5 {
+		position: absolute;
+		bottom: 4%;
+	}
+
+	.clearfix {
+		width: 768px;
 	}
 }
 
 /*change display at 640px*/
 @media (max-width: 640px) {
 
-	body {
-		background: green;
+  	nav {
+  		background: #fff;
+  		width: 100%;
+  		border-bottom: 2px solid #ccc;
+  		text-align: center;
+  		padding: 20px;
+  	}
+
+  	nav a {
+  		padding-left: 10%;
+  		padding-right: 10%;
+  		font-size: 20px;
+  	}
+
+  	footer {
+		background: #666;
+		color: #aaa;
+		border-top: 6px solid #4aaaa5;
+		padding: 33px;
+		text-align: center;
+		font-size: 12px;
+		margin-top: 30px
+		position: absolute;
+		bottom: -2100px;
 	}
 
   	#my-name {
-  		position: absolute;
+  		position: static;
   		left: 0px;
   		width: 100%;
+  		text-align: center;
 	}
 
 	#about-me, #portfolio, #contact{
@@ -327,15 +406,67 @@ textarea {
 		padding: 10px 30px 10px 30px;
 		position: absolute;
 		left: 20px;
+		top: 150px;
 	}	
+
+	#portfolio {
+		height: 2160px;
+	}
 
  	#connect-with-me {
 		border: 2px solid #ddd;
 		padding: 0px 30px 40px 30px;
-		width: 22%;
+		width: 93%;
 		background: #fff;
 		position: absolute;
-		top: 137px;
-		right: 200px;
+		top: 2400px;
+		left: 20px;
+	}
+
+	#profilepic {
+		width: 100%;
+		padding-bottom: 10px;
+	}
+
+	.content {
+		width: 640px;
+	}
+
+	.mysite {
+		width: 100%;
+	}
+
+	.relative{
+		position: absolute;
+		width: 90%;
+	}
+
+	.site2 {
+		position: absolute;
+		bottom: 57%;
+		left: 5%;
+	}
+
+	.site3 {
+		position: absolute;
+		bottom: 37%;
+		left: 5%;
+	}
+
+	.site4 {
+		position: absolute;
+		bottom: 17%;
+		left: 5%;
+	}
+
+	.site5 {
+		position: absolute;
+		bottom: 0%;
+		left: 5%;
+	}
+
+	.clearfix {
+		width: 640px;
+		height: 0px;
 	}
 }
