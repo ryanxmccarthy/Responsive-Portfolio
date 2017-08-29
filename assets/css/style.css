@@ -195,10 +195,6 @@ textarea {
 /*change display at 980px*/
 @media (max-width: 980px) {
 
-	body {
-		/*background: red;*/
-	}
-
 	h2 {
 		font-size: 18px;
 	}
@@ -206,7 +202,7 @@ textarea {
 	footer {
 		margin-top: 100px;
 		position: absolute;
-		top: 900px;
+		bottom: -165%;
 		width: 100%;
 	}
 
@@ -225,11 +221,15 @@ textarea {
 	#about-me, #portfolio, #contact{
 		border: 2px solid #ddd;
 		padding: 10px 30px 10px 30px;
-		width: 37%;
+		width: 42%;
 		position: absolute;
 		left: 128px;
 		margin-bottom: 150px;
-	}	
+	}
+
+	#portfolio {
+		height: 1500px;
+	}
 
   	#connect-with-me {
 		border: 2px solid #ddd;
@@ -241,7 +241,33 @@ textarea {
 		right: 100px;
 		margin-left: 50%;
 	}
-}
+
+	.relative{
+		position: absolute;
+		width: 168%;
+	}
+
+	.site2 {
+		position: absolute;
+		left: 7.4%;
+		bottom: 58%;
+	}
+
+	.site3 {
+		position: absolute;
+		bottom: 40%;
+	}
+
+	.site4 {
+		position: absolute;
+		left: 7.4%;
+		bottom: 22%;
+	}
+
+	.site5 {
+		position: absolute;
+		bottom: 4%;
+	}
 
 /*change display at 768px*/
 @media (max-width: 768px) {
