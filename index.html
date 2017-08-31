@@ -1,47 +1,54 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en-us">
+
 <head>
-  <title>About Me</title>
-  <meta name=viewport content="width=device-width, initial-scale=1">
-  <!-- <link rel="stylesheet" href="css/reset.css"> -->
-  <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <title>About | Ryan McCarthy</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
+
 <body>
 
-  <header>
-  <div id="header">
-    <div id="my-name">Ryan McCarthy</div>
-    <nav>
-      <a href="index.html" class="border-right">About</a>
-      <a href="portfolio.html" class="border-right">Portfolio</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+  <header id="masthead">
+    <div class="container">
+      <a href="index.html" id="logo">Ryan McCarthy</a>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
   </header>
 
-  <div class="clearfix content">
-    <div id="about-me">
+  <div id="main-container" class="container">
+    <section class="main-section">
       <h1>About Me</h1>
-      <hr>
-      <img src="assets/images/profile.jpg" alt="my-picture" id="profilepic">
-      <p>I am a 24 year old full-stack developer living in Durham, North Carolina. I have experience with HTML, CSS, JavaScript, jQuery, Bootstrap and Node.js. I have built a number of websites which can be found in the portfolio section of this site.</p>
+
+      <img src="assets/images/profile.jpg" class="auth-image" alt="My Profile Picture">
+
+      <p>I am a 24 year old full-stack developer living in Durham, North Carolina. I have experience with HTML, CSS, JavaScript, jQuery, Bootstrap, React and Node.js. I enjoy creating aesthetically pleasing and simultaneously engaging websites.</p>
+
       <p>In my free time, I enjoy hiking, powerlifting and reading. I have a pit bull / lab mix named Vlad, who also enjoys hiking, but does not enjoy powerlifting or reading. I also have a passion for both listening to and playing music, especially metal.</p>
-    </div>
 
-    <div id="connect-with-me">
-      <h2>Connect with Me</h2>
-      <hr>
-      <a href="https://github.com/ryanxmccarthy" target="_blank"><img src="assets/images/github.png" alt="" id="icon"></a>
-      <a href="https://www.linkedin.com/in/ryan-mccarthy-592381b8/" target="_blank"><img src="assets/images/linkedin.png" alt="" id="icon"></a>
-      <a href="https://stackoverflow.com/users/8303236/ryan-mccarthy" target="_blank"><img src="assets/images/stackoverflow.png" alt="" id="icon"></a>
-    </div>
+    </section>
+
+    <section class="sidebar">
+      <div id="connect">
+        <h2>Connect with Me</h2>
+
+        <a href="https://github.com/ryanxmccarthy" target="_blank"><img src="assets/images/github-128.png" class="social" alt="GitHub" /></a>
+        <a href="https://www.linkedin.com/in/ryan-mccarthy-592381b8/" target="_blank"><img src="assets/images/linkedin-128.png" class="social" alt="LinkedIn" /></a>
+        <a href="https://stackoverflow.com/users/8303236/ryan-mccarthy?tab=profile" target="_blank"><img src="assets/images/stackoverflow-128.png" class="social" alt="Stack Overflow" /></a>
+      </div>
+    </section>
   </div>
 
-  <div class="footer">
-    <footer>
-      © Copyright 2017 Ryan McCarthy
-    </footer>
-  </div>
-
+  <footer>
+    <div class="container">
+      Copyright &copy; 2017 Ryan McCarthy
+    </div>
+  </footer>
 </body>
+
 </html>

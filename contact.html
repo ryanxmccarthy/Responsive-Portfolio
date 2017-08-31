@@ -1,58 +1,66 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en-us">
+
 <head>
-	<title>Contact</title>
-	<meta name=viewport content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <title>Contact | Ryan McCarthy</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
+
 <body>
 
-	<header>
-	  <div id="header">
-	    <div id="my-name">Ryan McCarthy</div>
-	    <nav>
-	      <a href="index.html" class="border-right">About</a>
-	      <a href="portfolio.html" class="border-right">Portfolio</a>
-	      <a href="contact.html">Contact</a>
-	    </nav>
-	   </div>
-  	</header>
+  <header id="masthead">
+    <div class="container">
+      <a href="index.html" id="logo">Ryan McCarthy</a>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-  	<div class="clearfix content">
-  		<div id="contact">
-	      <h1>Contact</h1>
-	      <hr>
-	      <form action="" method="get" class="form">
-	      	Name
-	      	<br>
-	      	<input type="text" name="name" placeholder="John Smith" class="input">
-	      	<br>
-	      	<br>
-	      	Email
-	      	<br>
-	      	<input type="email" name="email" placeholder="example@gmail.com" class="input">
-	      	<br>
-	      	<br>
-	      	Message
-	      	<br>
-	      	<textarea name="comment" form="userform" id="textarea"></textarea>
-	      	<br>
-	      	<input type="submit" value="Submit" id="submit">
-	      </form>
-	    </div>
+  <div id="main-container" class="container">
+    <section class="main-section">
+      <h1>Contact</h1>
 
-  		<div id="connect-with-me">
-	      <h2>Connect with Me</h2>
-	      <hr>
-	      <a href="https://github.com/ryanxmccarthy" target="_blank"><img src="assets/images/github.png" alt="" id="icon"></a>
-	      <a href="https://www.linkedin.com/in/ryan-mccarthy-592381b8/" target="_blank"><img src="assets/images/linkedin.png" alt="" id="icon"></a>
-	      <a href="https://stackoverflow.com/users/8303236/ryan-mccarthy" target="_blank"><img src="assets/images/stackoverflow.png" alt="" id="icon"></a>
-	    </div>
-  	</div>
+      <form id="contact-form">
+        <ul>
+          <li>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+          </li>
+          <li>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required="required"></textarea>
+          </li>
+        </ul>
+        <input type="submit">
+      </form>
 
-  	<footer class="footer">
-    	© Copyright 2017 Ryan McCarthy
-  	</footer>
+    </section>
 
+    <section class="sidebar">
+      <div id="connect">
+        <h2>Connect with Me</h2>
+
+        <a href="https://github.com/ryanxmccarthy" target="_blank"><img src="assets/images/github-128.png" class="social" alt="GitHub" /></a>
+        <a href="https://www.linkedin.com/in/ryan-mccarthy-592381b8/" target="_blank"><img src="assets/images/linkedin-128.png" class="social" alt="LinkedIn" /></a>
+        <a href="https://stackoverflow.com/users/8303236/ryan-mccarthy?tab=profile" target="_blank"><img src="assets/images/stackoverflow-128.png" class="social" alt="Stack Overflow" /></a>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="container">
+      Copyright &copy; 2017 Ryan McCarthy
+    </div>
+  </footer>
 </body>
+
 </html>

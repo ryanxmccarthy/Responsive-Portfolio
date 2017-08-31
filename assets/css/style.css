@@ -1,472 +1,338 @@
-* {
-	box-sizing: border-box;
-}
+/*Max width*/	
+	body {
+	  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	  font-size: 18px;
+	  line-height: 34px;
+	  color: #777;
+	  background: url("../images/concrete_seamless.png");
+	}
 
-nav {
-	width: auto;
-	float: right;
-	padding-top: 35px;
-	font-size: 24px;
-	width: 35%;
-}
+	* {
+	  box-sizing: border-box;
+	}
 
-body {
-	margin: 0 auto;
-	background-image: url("../images/white.png");
-}
+	/* general */
 
-h1, h2 {
-	font-family: 'Georgia', Times, "Times New Roman", serif;
-	color: #4aaaa5;
-}
+	.container {
+	  width: 100%;
+	  max-width: 960px;
+	  margin: 0 auto;
+	  clear: both;
+	}
 
-h1 {
-	font-size: 30px;
-}
+	h1,
+	h2,
+	h3,
+	p {
+	  margin-bottom: 20px;
+	}
 
-nav a {
-	color: #777;
-	text-decoration: none;
-	width: 30%;
-	padding-right: 5px;
-}
+	p:last-child {
+	  margin-bottom: 0;
+	}
 
-p {
-	color: #777;
-	line-height: 200%;
-}
+	h1,
+	h2,
+	h3 {
+	  font-family: Georgia, Times, "Times New Roman", serif;
+	  font-weight: 700;
+	  color: #4aaaa5;
+	}
 
-hr {
-	background: #ccc;
-	color: #ccc;
-    height: 3px;
-    width: 100%;
-}
+	h1 {
+	  padding-bottom: 20px;
+	  font-size: 30px;
+	  line-height: 49px;
+	  border-bottom: 3px solid #ddd;
+	}
 
-footer {
-	background: #666;
-	color: #aaa;
-	border-top: 6px solid #4aaaa5;
-	padding: 33px;
-	text-align: center;
-	font-size: 12px;
-	margin-top: 30px
-}
+	h2,
+	h3 {
+	  font-size: 22px;
+	}
 
-textarea {
-	width: 100%;
-	height: 150px;
-}
+	/* header */
 
-.clearfix {
-	display: block;
-	width: 1024px;
-	margin: 0 auto;
-}
+	#masthead {
+	  position: fixed;
+	  z-index: 99;
+	  width: 100%;
+	  margin: 0 0 30px;
+	  overflow: auto;
+	  color: #fff;
+	  background: #fff;
+	  border-bottom: 2px solid #ccc;
+	}
 
-#my-name {
-	font-family: 'Georgia', Times, Times New Roman, serif;
-	color: #fff;
-	background: #4aaaa5;
-	font-size: 32px;
-	padding: 30px 20px 29px 20px;
-	position: absolute;
-	left: 128px;
-}
+	#logo {
+	  float: left;
+	  width: 250px;
+	  height: 90px;
+	  font-family: Georgia, Times, "Times New Roman", serif;
+	  font-size: 30px;
+	  font-weight: 700;
+	  line-height: 90px;
+	  color: #fff;
+	  text-align: center;
+	  text-decoration: none;
+	  background: #4aaaa5;
+	}
 
-#about-me, #portfolio, #contact{
-	border: 2px solid #ddd;
-	padding: 10px 30px 10px 30px;
-	width: 60%;
-	background: #fff;
-	margin-top: 40px;
-	margin-right: 100px;
-}
+	nav {
+	  float: right;
+	  margin-top: 25px;
+	}
 
-#portfolio {
-	height: 770px;
-}
+	nav a {
+	  display: inline-block;
+	  padding-left: 15px;
+	  margin-left: 15px;
+	  line-height: 18px;
+	  color: #999;
+	  text-decoration: none;
+	  border-left: 1px solid #efefef;
+	}
 
-#profilepic {
-	width: 240px;
-	height: auto;
-	float: left;
-	margin: 10px 20px 0 0;
-}
+	nav a:first-child {
+	  border-left: 0 none;
+	}
 
-#connect-with-me {
-	border: 2px solid #ddd;
-	padding: 0px 30px 40px 30px;
-	width: 22%;
-	background: #fff;
-	position: absolute;
-	top: 137px;
-	right: 200px;
-}
+	/* footer */
 
-#icon {
-	width: 28.5%;
-	height: auto;
-	margin: 3.5px;
-}
+	footer {
+	  padding: 30px 0;
+	  clear: both;
+	  font-size: 12px;
+	  color: #fff;
+	  color: #ccc;
+	  text-align: center;
+	  background: #666;
+	  border-top: 8px solid #4aaaa5;
+	}
 
-#header {
-	background: #fff;
-	border-bottom: 2px solid #ccc;
-	height: 97px;
-}
+	/* sidebar */
 
-#submit {
-	color: #fff;
-	background-color: #4aaaa5;
-	border: none;
-	font-size: 14px;
-	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-	padding: 10px 20px;
-	margin: 15px auto;
-}
+	.sidebar {
+	  float: right;
+	  width: 100%;
+	  max-width: 270px;
+	  padding: 30px;
+	  margin-bottom: 20px;
+	  background: #fff;
+	  border: 1px solid #ddd;
+	}
 
-.border-right {
-	border-right: 2px solid #777;
-}
+	h3,
+	.sidebar h2 {
+	  padding-bottom: 20px;
+	  margin-bottom: 15px;
+	  line-height: 22px;
+	  border-bottom: 2px solid #eee;
+	}
 
-.content {
-  	min-height: calc(80vh - 70px);
-}
+	.social {
+	  width: 62px;
+	  height: 62px;
+	  margin-top: 8px;
+	  margin-right: 5px;
+	}
 
-.form {
-	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-	color: #777
-}
+	.social:last-child {
+	  margin-right: 0;
+	}
 
-.input {
-    width: 100%;
-}
+	/* main */
 
-.mysite {
-	width: 50%;
-	height: auto;
-}
+	#main-container {
+	  padding-top: 130px;
+	}
 
-.relative{
-	position: relative; 
-	display: block;
-}
+	.main-section {
+	  float: left;
+	  width: 100%;
+	  max-width: 650px;
+	  padding: 30px;
+	  margin: 0 0 40px;
+	  background: #fff;
+	  border: 1px solid #ddd;
+	}
 
-.absolute-text{
-	position: absolute; 
-	bottom: 0; 
-	font-size: 24px; 
-	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;; 
-	background: #4aaaa5;
-	padding: 10px 20px; 
-	width: 50%;
-	text-align: center;
-	color: #fff;
-}
+	/* portfolio page */
 
-.site2 {
-	position: relative;
-	left: 277px;
-	bottom: 210px;
-}
+	.work {
+	  position: relative;
+	  float: left;
+	  width: 274px;
+	  margin: 20px 0 25px;
+	  overflow: auto;
+	}
 
-.site3 {
-	position: relative;
-	bottom: 199px;
-}
+	.work:nth-child(even) {
+	  margin-right: 40px;
+	}
 
-.site4 {
-	position: relative;
-	left: 277px;
-	bottom: 409px;
-}
+	.work img {
+	  width: 100%;
+	  border: 0 none;
+	  opacity: 0.8;
+	}
 
-.site5 {
-	position: relative;
-	bottom: 398px;
-}
+	.work h3 {
+	  position: absolute;
+	  bottom: 20px;
+	  width: 100%;
+	  padding: 15px;
+	  margin-bottom: 0;
+	  font-weight: 300;
+	  line-height: 30px;
+	  color: #fff;
+	  text-align: center;
+	  background: #4aaaa5;
+	  border-bottom: 0;
+	}
 
-.clearfix::after {
-    clear: both;
-    content: '';
-    display: block;
-}
+	.auth-image {
+	  float: left;
+	  width: 300px;
+	  height: auto;
+	  margin-top: 10px;
+	  margin-right: 25px;
+	}
 
-/*change display at 980px*/
+	/* contact page */
+
+	#contact-form ul {
+	  margin-bottom: 20px;
+	}
+
+	#contact-form li {
+	  margin-bottom: 10px;
+	}
+
+	label,
+	input[type=text],
+	input[type=email],
+	textarea {
+	  display: block;
+	  width: 100%;
+	}
+
+	input[type=text],
+	input[type=email],
+	textarea {
+	  height: 35px;
+	  padding: 0 10px;
+	  font-size: 14px;
+	  border: 1px solid #ddd;
+	}
+
+	textarea {
+	  height: 200px;
+	}
+
+	input[type=submit] {
+	  padding: 10px 30px;
+	  font-size: 18px;
+	  color: #fff;
+	  cursor: pointer;
+	  background: #4aaaa5;
+	  border: 0 none;
+	}
+
+/*980px*/
 @media (max-width: 980px) {
-
-	h2 {
-		font-size: 18px;
+	#masthead {
+		padding: 0 12%;
 	}
 
-	footer {
-		margin-top: 100px;
-		position: absolute;
-		bottom: -165%;
-		width: 100%;
+	#main-container {
+	  padding-top: 130px;
+	  padding-left: 11%;
 	}
 
-	#profilepic {
-		width: 100%;
-		height: auto;
-		float: left;
-		margin: 10px 20px 0 0;
+	.main-section {
+	  width: 50%;
 	}
 
-  	#my-name {
-		position: absolute;
-		left: 128px;
+	.sidebar {
+	  margin-right: 13%;
 	}
 
-	#about-me, #portfolio, #contact{
-		border: 2px solid #ddd;
-		padding: 10px 30px 10px 30px;
-		width: 42%;
-		position: absolute;
-		left: 128px;
-		margin-bottom: 150px;
+	.work {
+	  width: 100%;
 	}
 
-	#portfolio {
-		height: 1500px;
-	}
-
-  	#connect-with-me {
-		border: 2px solid #ddd;
-		padding: 0px 30px 40px 30px;
-		width: 30%;
-		background: #fff;
-		position: absolute;
-		top: 137px;
-		right: 100px;
-	}
-
-	.relative{
-		position: absolute;
-		width: 168%;
-	}
-
-	.site2 {
-		position: absolute;
-		left: 7.4%;
-		bottom: 58%;
-	}
-
-	.site3 {
-		position: absolute;
-		bottom: 40%;
-	}
-
-	.site4 {
-		position: absolute;
-		left: 7.4%;
-		bottom: 22%;
-	}
-
-	.site5 {
-		position: absolute;
-		bottom: 4%;
-	}
-
-	.clearfix {
-		width: 980px;
+	.auth-image {
+	  width: 100%;
+	  padding-bottom: 15px;
 	}
 }
 
-/*change display at 768px*/
+/*768px*/
 @media (max-width: 768px) {
-
-	footer {
-		background: #666;
-		color: #aaa;
-		border-top: 6px solid #4aaaa5;
-		padding: 33px;
-		text-align: center;
-		font-size: 12px;
-		margin-top: 30px
+	#masthead {
+		padding: 0 3%;
 	}
 
-	#header {
-		background: #fff;
-		border-bottom: 2px solid #ccc;
-		height: 97px;
+	#main-container {
+	  padding: 130px 3% 0 3%;
+	}
+
+	.main-section {
+	  	width: 100%;
+	  	max-width: 769px;
+	}
+
+	.sidebar {
+		max-width: 768px;
 		width: 100%;
-	}
-
-  	#my-name {
-		position: absolute;
-		left: 28px;
-	}
-
-	#about-me, #portfolio, #contact {
-		border: 2px solid #ddd;
-		padding: 10px 30px 10px 30px;
-		position: absolute;
-		left: 28px;
-		width: 93%;
-	}
-
-	#portfolio {
-		height: 900px;
-	}
-
-	#connect-with-me {
-		border: 2px solid #ddd;
-		padding: 0px 30px 40px 30px;
-		width: 93%;
-		background: #fff;
-		position: absolute;
-		top: 1075px;
-		left: 28px;
-		}
-
-	#profilepic {
-		width: 50%;
-		height: auto;
-		float: left;
-		margin: 10px 20px 0 0;
-	}
-
-	#icon {
-		width: 10%;
-		padding-top: 10px;
-	}
-
-	.relative{
-		position: absolute;
-		width: 90%;
-	}
-
-	.site2 {
-		position: absolute;
-		left: 50%;
-		bottom: 62%;
-	}
-
-	.site3 {
-		position: absolute;
-		bottom: 33%;
-	}
-
-	.site4 {
-		position: absolute;
-		left: 50%;
-		bottom: 33%;
-	}
-
-	.site5 {
-		position: absolute;
-		bottom: 4%;
-	}
-
-	.clearfix {
-		width: 768px;
-	}
-}
-
-/*change display at 640px*/
-@media (max-width: 640px) {
-
-  	nav {
-  		background: #fff;
-  		width: 100%;
-  		border-bottom: 2px solid #ccc;
-  		text-align: center;
-  		padding: 20px;
-  	}
-
-  	nav a {
-  		padding-left: 10%;
-  		padding-right: 10%;
-  		font-size: 20px;
-  	}
-
-  	footer {
-		background: #666;
-		color: #aaa;
-		border-top: 6px solid #4aaaa5;
-		padding: 33px;
-		text-align: center;
-		font-size: 12px;
-		margin-top: 30px
-		position: absolute;
-		bottom: -2100px;
-	}
-
-  	#my-name {
-  		position: static;
-  		left: 0px;
-  		width: 100%;
-  		text-align: center;
-	}
-
-	#about-me, #portfolio, #contact{
-		border: 2px solid #ddd;
-		padding: 10px 30px 10px 30px;
-		position: absolute;
-		left: 20px;
-		top: 150px;
+		margin-right: 0;
+		margin-bottom: 40px;
 	}	
 
-	#portfolio {
-		height: 2160px;
+	.work {
+		width: 309px;
 	}
 
- 	#connect-with-me {
-		border: 2px solid #ddd;
-		padding: 0px 30px 40px 30px;
-		width: 93%;
-		background: #fff;
-		position: absolute;
-		top: 2400px;
-		left: 20px;
+	.auth-image {
+	  width: 50%;
+	  padding-bottom: 0px;
+	}
+}	
+
+/*640px*/
+@media (max-width: 640px) {
+	#logo {
+	  width: 100%;
 	}
 
-	#profilepic {
+	#masthead {
+		position: static;
+		padding: 0 0%;
+	}
+
+	#main-container {
+	  padding: 130px 3% 0 3%;
+	}
+
+	.main-section {
+	  	width: 100%;
+	  	max-width: 769px;
+	}
+
+	.sidebar {
+		max-width: 768px;
 		width: 100%;
-		padding-bottom: 10px;
+		margin-right: 0;
+		margin-bottom: 40px;
+	}	
+
+	.work {
+		width: 309px;
 	}
 
-	.content {
-		width: 640px;
-	}
-
-	.mysite {
-		width: 100%;
-	}
-
-	.relative{
-		position: absolute;
-		width: 90%;
-	}
-
-	.site2 {
-		position: absolute;
-		bottom: 57%;
-		left: 5%;
-	}
-
-	.site3 {
-		position: absolute;
-		bottom: 37%;
-		left: 5%;
-	}
-
-	.site4 {
-		position: absolute;
-		bottom: 17%;
-		left: 5%;
-	}
-
-	.site5 {
-		position: absolute;
-		bottom: 0%;
-		left: 5%;
-	}
-
-	.clearfix {
-		width: 640px;
-		height: 0px;
+	.auth-image {
+	  width: 100%;
+	  padding-bottom: 10px;
 	}
 }
