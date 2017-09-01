@@ -1,4 +1,4 @@
-/*Max width*/	
+/*Default width*/	
 	body {
 	  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 	  font-size: 18px;
@@ -311,8 +311,19 @@
 		padding: 0 0%;
 	}
 
+	nav {
+		float: none;
+		margin-top: 0px;
+		text-align: center;
+	}
+
+	nav a {
+		padding: 20px 70px;
+		margin-left: 0px
+	}
+
 	#main-container {
-	  padding: 130px 3% 0 3%;
+	  padding: 0px 3%;
 	}
 
 	.main-section {
@@ -328,7 +339,7 @@
 	}	
 
 	.work {
-		width: 309px;
+		width: 100%;
 	}
 
 	.auth-image {
