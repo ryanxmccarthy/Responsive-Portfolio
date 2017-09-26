@@ -266,6 +266,13 @@
 	  width: 100%;
 	  padding-bottom: 15px;
 	}
+
+/*819px*/
+@media (max-width: 819px) {
+	.sidebar {/
+		width: 40%;
+		margin-right: 40px;
+	}	
 }
 
 /*768px*/
@@ -318,8 +325,9 @@
 	}
 
 	nav a {
-		padding: 20px 70px;
-		margin-left: 0px
+		padding: 15px 0px;
+		margin-left: 0px;
+		width: 25%;
 	}
 
 	#main-container {
