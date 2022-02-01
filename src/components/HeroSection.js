@@ -17,15 +17,13 @@ function Hero() {
         >
           CONTACT ME
         </Button>
-        <a href='https://github.com/ryanxmccarthy'>
           <Button
             className='btns'
             buttonStyle='btn--primary'
-            buttonSize='btn--large'
+            buttonSize='btn--large'           
           >
             VIEW MY GITHUB <i className='fab fa-github' />
           </Button>
-        </a>
       </div>
     </div>
   );
