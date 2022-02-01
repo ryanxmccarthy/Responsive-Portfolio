@@ -22,7 +22,7 @@ function Hero() {
           buttonStyle='btn--primary'
           buttonSize='btn--large'
         >
-          v <i className='far fa-play-circle' />
+          VIEW MY GITHUB <i className='fab fa-github' />
         </Button>
       </div>
     </div>
