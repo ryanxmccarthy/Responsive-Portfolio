@@ -16,7 +16,7 @@ function Hero() {
             buttonStyle='btn--outline'
             buttonSize='btn--large'
           >
-            CONTACT ME
+            CONTACT ME <i className='fas fa-envelope' />
           </Button>
         </td>
         <td onClick={() => window.open("https://github.com/ryanxmccarthy", "_blank")}>       
