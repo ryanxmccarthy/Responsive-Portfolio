@@ -10,20 +10,24 @@ function Hero() {
       <h1>Ryan McCarthy</h1>
       <p>Web Developer</p>
       <div className='hero-btns'>
-        <Button
-          className='btns'
-          buttonStyle='btn--outline'
-          buttonSize='btn--large'
-        >
-          CONTACT ME
-        </Button>
-        {/* <Button
-          className='btns'
-          buttonStyle='btn--primary'
-          buttonSize='btn--large'           
-        >
-          VIEW MY GITHUB <i className='fab fa-github' />
-        </Button> */}
+        <td onClick={()=> window.open("https://gmail.com", "_blank")}>
+          <Button
+            className='btns'
+            buttonStyle='btn--outline'
+            buttonSize='btn--large'
+          >
+            CONTACT ME
+          </Button>
+        </td>
+        <td onClick={()=> window.open("https://github.com/ryanxmccarthy", "_blank")}>       
+          <Button
+            className='btns'
+            buttonStyle='btn--primary'
+            buttonSize='btn--large'           
+          >
+            VIEW MY GITHUB <i className='fab fa-github' />
+          </Button>
+        </td>
       </div>
     </div>
   );
