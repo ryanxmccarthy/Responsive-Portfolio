@@ -10,7 +10,7 @@ function Hero() {
       <h1>Ryan McCarthy</h1>
       <p>Web Developer</p>
       <div className='hero-btns'>
-        <td onClick={()=> window.open("https://gmail.com", "_blank")}>
+        <td onClick={() => window.open('mailto:ryanxmccarthy@gmail.com', '_blank')}>
           <Button
             className='btns'
             buttonStyle='btn--outline'
@@ -19,7 +19,7 @@ function Hero() {
             CONTACT ME
           </Button>
         </td>
-        <td onClick={()=> window.open("https://github.com/ryanxmccarthy", "_blank")}>       
+        <td onClick={() => window.open("https://github.com/ryanxmccarthy", "_blank")}>       
           <Button
             className='btns'
             buttonStyle='btn--primary'
