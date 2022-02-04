@@ -16,12 +16,14 @@ function Cards() {
                 path='/'
               />
           </td>
+          <td onClick={() => window.open('https://github.com/ryanxmccarthy/todos', '_blank')}>
               <Card 
                 src='images/img-2.jpg'
-                text='Travel through the Islands of Bali in a Private Cruise'
-                label='Luxury'
-                path='/services'
+                text='Todo App'
+                label='Javascript'
+                path='/'
               />
+            </td>
           </ul>
           <ul className='cards__items'>
             <Card 
