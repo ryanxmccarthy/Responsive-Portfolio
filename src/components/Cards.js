@@ -19,7 +19,7 @@ function Cards() {
           <td onClick={() => window.open('https://github.com/ryanxmccarthy/todos', '_blank')}>
               <Card 
                 src='images/img-2.jpg'
-                text='Todo App'
+                text='Todo App that works real coolly'
                 label='Javascript'
                 path='/'
               />
@@ -27,19 +27,19 @@ function Cards() {
           </ul>
           <ul className='cards__items'>
             <Card 
-              src='images/img-9.jpg'
+              src='images/img-3.jpg'
               text='Explore the hidden waterfall deep inside the Amazon jungle'
               label='Adventure'
               path='/services'
             />
             <Card 
-              src='images/img-2.jpg'
+              src='images/img-4.jpg'
               text='Travel through the Islands of Bali in a Private Cruise'
               label='Luxury'
               path='/services'
             />
             <Card 
-              src='images/img-2.jpg'
+              src='images/img-5.jpg'
               text='Travel through the Islands of Bali in a Private Cruise'
               label='Luxury'
               path='/services'
