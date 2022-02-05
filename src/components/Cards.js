@@ -12,15 +12,13 @@ function Cards() {
                 src='images/img-1.jpg'
                 text='Responsive Scrobbler'
                 label='React'
-                link='https://github.com/'
-                path='/'
+                link='https://github.com/ryanxmccarthy/react-scrobbler'
               />         
               <Card 
                 src='images/img-2.jpg'
-                text='Todo App tal coolly'
-                label='Javascript'
-                onClick={() => window.open('https://github.com/ryanxmccarthy/todos', '_blank')}
-                path='/'
+                text='Todo App'
+                label='React'
+                link='https://github.com/ryanxmccarthy/todos'
               />
           </ul>
           <ul className='cards__items'>
