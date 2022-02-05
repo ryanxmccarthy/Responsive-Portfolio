@@ -8,22 +8,23 @@ function Cards() {
       <div className='cards__container'>
         <div className='cards__wrapper'>
           <ul className='cards__items'>
-          <td onClick={() => window.open('https://github.com/ryanxmccarthy/react-scrobbler', '_blank')}>
-              <Card 
+            <div 
+                onClick={() => window.open('https://github.com/ryanxmccarthy/react-scrobbler', '_blank')}
+            >
+                <Card 
                 src='images/img-1.jpg'
                 text='Responsive Scrobbler'
                 label='React'
                 path='/'
               />
-          </td>
-          <td onClick={() => window.open('https://github.com/ryanxmccarthy/todos', '_blank')}>
+            </div>              
               <Card 
                 src='images/img-2.jpg'
-                text='Todo App that works real coolly'
+                text='Todo App tal coolly'
                 label='Javascript'
+                onClick={() => window.open('https://github.com/ryanxmccarthy/todos', '_blank')}
                 path='/'
               />
-            </td>
           </ul>
           <ul className='cards__items'>
             <Card 
