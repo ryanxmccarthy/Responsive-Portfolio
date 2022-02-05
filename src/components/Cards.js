@@ -8,16 +8,13 @@ function Cards() {
       <div className='cards__container'>
         <div className='cards__wrapper'>
           <ul className='cards__items'>
-            <div 
-                onClick={() => window.open('https://github.com/ryanxmccarthy/react-scrobbler', '_blank')}
-            >
                 <Card 
                 src='images/img-1.jpg'
                 text='Responsive Scrobbler'
                 label='React'
+                link='https://github.com/'
                 path='/'
-              />
-            </div>              
+              />         
               <Card 
                 src='images/img-2.jpg'
                 text='Todo App tal coolly'
