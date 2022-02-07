@@ -22,7 +22,7 @@ function Hero() {
             className='btns'
             buttonStyle='btn--primary'
             buttonSize='btn--large'
-            // onClick={window.open('https://github.com/ryanxmccarthy', '_blank')}           
+            onClick={() => {window.open('https://github.com/ryanxmccarthy', '_blank')}}
           >
             VIEW MY GITHUB <i className='fab fa-github' />
           </Button>
