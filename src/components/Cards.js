@@ -34,12 +34,12 @@ function Cards() {
               label='Luxury'
               path='/services'
             />
-            <Card 
+            {/* <Card 
               src='images/img-5.jpg'
               text='Travel through the Islands of Bali in a Private Cruise'
               label='Luxury'
               path='/services'
-            />
+            /> */}
           </ul>
         </div>
       </div>
